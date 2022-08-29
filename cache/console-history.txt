@@ -1,0 +1,10 @@
+await hardhatToken.totalSupply()
+await hardhatToken.maxSupply()
+hardhatToken.maxSupply()
+Token.balanceOf(deployerAddress)
+    hardhatToken = await Token.deploy("Black Eye Token","BET",100000);
+Token = await ethers.getContractFactory("Token");
+Token.balanceOf(deployerAddress)
+> GLDToken.balanceOf(deployerAddress)
+Token.maxSupply()
+.help

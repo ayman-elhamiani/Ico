@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/aymen/Documents/ais presentation/ICO_v1.0/contracts/Ico.sol": {
-      "lastModificationDate": 1661772385696,
-      "contentHash": "7b1804287a97ee5d28485bd51e9c2e76",
+      "lastModificationDate": 1662386453020,
+      "contentHash": "edc8e53b8058e8651ccb415edccceb53",
       "sourceName": "contracts/Ico.sol",
       "solcConfig": {
         "version": "0.8.9",
@@ -29,11 +29,13 @@
         }
       },
       "imports": [
+        "hardhat/console.sol",
         "@openzeppelin/contracts/token/ERC20/ERC20.sol",
-        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol"
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol",
+        "./Whitelist.sol"
       ],
       "versionPragmas": [
-        "^0.8.4"
+        "^0.8.0"
       ],
       "artifacts": [
         "Ico"
@@ -223,8 +225,8 @@
       ]
     },
     "/Users/aymen/Documents/ais presentation/ICO_v1.0/contracts/Token.sol": {
-      "lastModificationDate": 1661526575572,
-      "contentHash": "235bbe4f0438d75d3f546c3b248fe20e",
+      "lastModificationDate": 1661866397691,
+      "contentHash": "6744ef541f208299f308e9b65cb84ec0",
       "sourceName": "contracts/Token.sol",
       "solcConfig": {
         "version": "0.8.9",
@@ -332,6 +334,78 @@
       ],
       "artifacts": [
         "Pausable"
+      ]
+    },
+    "/Users/aymen/Documents/ais presentation/ICO_v1.0/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1661192377320,
+      "contentHash": "4ff3cd2f6272c9a6516e9ee4f2b967d3",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/Users/aymen/Documents/ais presentation/ICO_v1.0/contracts/Whitelist.sol": {
+      "lastModificationDate": 1662311090271,
+      "contentHash": "dfd89a1a41f8e997da580100d485b6e9",
+      "sourceName": "contracts/Whitelist.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Whitelist"
       ]
     }
   }

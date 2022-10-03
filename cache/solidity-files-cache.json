@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/aymen/Documents/ais presentation/ICO_v1.0/contracts/Ico.sol": {
-      "lastModificationDate": 1662386453020,
-      "contentHash": "edc8e53b8058e8651ccb415edccceb53",
+      "lastModificationDate": 1663016409939,
+      "contentHash": "29228f9d5b6f5cd0da0df67ca1d76b8b",
       "sourceName": "contracts/Ico.sol",
       "solcConfig": {
         "version": "0.8.9",
@@ -31,8 +31,10 @@
       "imports": [
         "hardhat/console.sol",
         "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
         "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol",
-        "./Whitelist.sol"
+        "./KYC.sol",
+        "./Pausable.sol"
       ],
       "versionPragmas": [
         "^0.8.0"
@@ -371,10 +373,10 @@
         "console"
       ]
     },
-    "/Users/aymen/Documents/ais presentation/ICO_v1.0/contracts/Whitelist.sol": {
-      "lastModificationDate": 1662311090271,
-      "contentHash": "dfd89a1a41f8e997da580100d485b6e9",
-      "sourceName": "contracts/Whitelist.sol",
+    "/Users/aymen/Documents/ais presentation/ICO_v1.0/contracts/Pausable.sol": {
+      "lastModificationDate": 1662402577273,
+      "contentHash": "9f513fbb620e69296e66d593503fd76d",
+      "sourceName": "contracts/Pausable.sol",
       "solcConfig": {
         "version": "0.8.9",
         "settings": {
@@ -405,7 +407,44 @@
         "^0.8.0"
       ],
       "artifacts": [
-        "Whitelist"
+        "Pausable"
+      ]
+    },
+    "/Users/aymen/Documents/ais presentation/ICO_v1.0/contracts/KYC.sol": {
+      "lastModificationDate": 1663016356817,
+      "contentHash": "123e9e3532367686f57e9162b4f9744f",
+      "sourceName": "contracts/KYC.sol",
+      "solcConfig": {
+        "version": "0.8.9",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "KYC"
       ]
     }
   }
